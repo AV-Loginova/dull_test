@@ -1,0 +1,42 @@
+{
+  "widget": {
+    "name": "widget.name",
+    "description": "widget.description",
+    "short_description": "widget.short_description",
+    "version": "1.0.13",
+    "interface_version": 2,
+    "init_once": false,
+    "locale": ["en"],
+    "installation": true,
+    "support": {
+      "link": "https://www.example.com",
+      "email": "example@example.com"
+    }
+  },
+  "locations": ["salesbot_designer"],
+  "settings": {
+    "text": {
+      "name": "settings.text",
+      "type": "text",
+      "required": false
+    }
+  },
+  "salesbot_designer": {
+    "handler_name": {
+      "name": "settings.handler_name",
+      "settings": {
+        "text": {
+          "name": "settings.text",
+          "default_value": "Hello, i am Salesbot!",
+          "type": "text",
+          "manual": true
+        },
+        "link_to": {
+          "name": "settings.link",
+          "default_value": "example.com",
+          "type": "url"
+        }
+      }
+    }
+  }
+}

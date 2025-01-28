@@ -1,0 +1,20 @@
+{
+  "widget": {
+    "name": "Name",
+    "short_description": "Short description",
+    "description": "Description",
+    "tour_description": "Tour descriptions"
+  },
+  "settings": {
+    "agreement": "agreement"
+  },
+  "lang": {
+    "code": "Integration"
+  },
+  "dp": {
+    "message": "EXAMPLE"
+  },
+  "advanced": {
+    "title": "Integration"
+  }
+}

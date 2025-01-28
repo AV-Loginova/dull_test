@@ -1,0 +1,11 @@
+const token =
+  "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjgxMzg0ZGEwZmZmNGQ4YjIxZTVlMWQ0ZmIyMmYxZDdhODg4MWNlMTYyNTUyODI1NzFhOWNkOWRlYWNjYzQwZWZmOWY3NzlkNWQ3NjNhNmI4In0.eyJhdWQiOiI3YjQ5MGYxOC0yYmU1LTRhNTUtYTc0ZS0xOTYzYzk2NDFiOTgiLCJqdGkiOiI4MTM4NGRhMGZmZjRkOGIyMWU1ZTFkNGZiMjJmMWQ3YTg4ODFjZTE2MjU1MjgyNTcxYTljZDlkZWFjY2M0MGVmZjlmNzc5ZDVkNzYzYTZiOCIsImlhdCI6MTczNzk4MzgwOCwibmJmIjoxNzM3OTgzODA4LCJleHAiOjE3Mzc5ODYyMDgsInN1YiI6IjExMzY0MDU1IiwiZ3JhbnRfdHlwZSI6IiIsImFjY291bnRfaWQiOjAsImJhc2VfZG9tYWluIjpudWxsLCJ2ZXJzaW9uIjoxLCJzY29wZXMiOlsiY2hhdHMiLCJjcm0iLCJtYWlsIiwibm90aWZpY2F0aW9ucyIsInVuc29ydGVkIl0sImhhc2hfdXVpZCI6bnVsbH0.htOaUWrGWgP82d8Mx2VlpScdvg0iudN220vHaMgZepLtgZif09KHjnLBgqsCEUTsJhnhhxHKT7DGLbfT0EQHP-H38BNR9Volm5wOo8DUyfgUDOJCPMlVuSzawkJWX7H1SJn1QXpnxVlSxTtJntow8BVTt2c5_a25m1SvKGQk8HDLfu3R8sUbdb3Zy6XzVrfoIm6jSCH3CUTPO2PwbfsjhlvGnPb0wHbehDulTJY6bfk9_BgmhUiCEl8a9AMEL7z1A-zK3-tWCS97E2QDN6xQMY6uhvbqL00g6OpF6uPo_hFID7MWuGb5NJcPFjihefLRINy2cNmuuNsHCNKw4OK7lw";
+const options = {
+  method: "GET",
+  headers: { accept: "application/json", authorization: `Bearer ${token}` },
+};
+
+fetch("https://digitalpipelinetest.kommo.com/api/v4/leads", options)
+  .then((res) => res.json())
+  .then((res) => console.log(JSON.stringify(res)))
+  .catch((err) => console.error(err));
