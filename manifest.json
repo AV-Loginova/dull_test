@@ -20,23 +20,5 @@
       "type": "text",
       "required": false
     }
-  },
-  "salesbot_designer": {
-    "handler_name": {
-      "name": "settings.handler_name",
-      "settings": {
-        "text": {
-          "name": "settings.text",
-          "default_value": "Hello, i am Salesbot!",
-          "type": "text",
-          "manual": true
-        },
-        "link_to": {
-          "name": "settings.link",
-          "default_value": "example.com",
-          "type": "url"
-        }
-      }
-    }
   }
 }
